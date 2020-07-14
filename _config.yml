@@ -1,1 +1,11 @@
 theme: jekyll-theme-midnight
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - components.md
+  - directives.md
+  - pipes.md
+  - rx-js-basics.md
