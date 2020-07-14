@@ -9,3 +9,4 @@ include:
   - directives.md
   - pipes.md
   - rx-js-basics.md
+  - index.md
