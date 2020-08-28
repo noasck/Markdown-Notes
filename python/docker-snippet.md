@@ -2,20 +2,22 @@
 ### without WSGI
 
 ``` bash
+root
 ├── docker-compose.yml
-├── services
-│   └── web
-│       ├── Dockerfile
-│       ├── tests
-│       ├── project
-│       │  └── __init__.py
-│       ├── requirements.txt
-│       └── start.py
-└── .env
+├── .env
+└── services
+    └── web
+        ├── Dockerfile
+        ├── project
+        │   └── __init__.py
+        ├── requirements.txt
+        ├── start.py
+        └── tests
+            ├── conftest.py
+            └── fixtures.py
 ```
-
 Dockerfile
-``` docker
+``` bash
 FROM python:3.7.8-slim-buster
 
 WORKDIR /usr/src/app
@@ -34,7 +36,7 @@ COPY . /usr/src/app/
 
 Docker-compose.yml
 
-```
+``` yaml
 version: '3.7'
 services:
   web:
@@ -43,7 +45,7 @@ services:
     volumes:
       - ./services/web/:/usr/src/app/
     ports:
-      - 80:80
+      - 1234:1234
     env_file:
       - ./.env
   db:
@@ -59,4 +61,12 @@ services:
 
 volumes:
   postgres_data:
+```
+
+conftest.py
+
+``` python
+import pytest
+
+pytest_plugins = ['fixtures']
 ```
