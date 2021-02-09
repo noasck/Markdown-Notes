@@ -44,6 +44,7 @@ d = {'No' : False, 'Yes' : True}
 df['International plan'] = df['International plan'].map(d)
 df.head()
 ```
+
 #### Summary tables
 
 ``` python
