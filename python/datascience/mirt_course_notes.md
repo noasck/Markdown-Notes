@@ -18,3 +18,13 @@
 ![Multiclass metrics](assets/mirt_course_notes-7cd15bcf.png)
 
 - Confusion matrix
+
+
+# Nonlinear SVM Kernels
+
+![Kernels](assets/mirt_course_notes-64fd16b8.png)
+
+
+# PCA: Effective dimensionality
+We can use **reconstruction loss** to evaluate effective k-param to apply decomposition.
+![f_effective_dim_pca](assets/mirt_course_notes-058a1ae8.png)
