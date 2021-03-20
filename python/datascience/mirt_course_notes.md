@@ -28,3 +28,27 @@
 # PCA: Effective dimensionality
 We can use **reconstruction loss** to evaluate effective k-param to apply decomposition.
 ![f_effective_dim_pca](assets/mirt_course_notes-058a1ae8.png)
+
+
+# Cross-validation
+
+#### Naive:
+
+- KFold.
+
+- ShuffleSplit.
+
+#### Considering classes distribution:
+
+- Stratified KFold.
+
+- Stratified ShuffleSplit.
+
+#### Considering similar samples or grouped samples:
+
+- Group KFold.
+
+- Group ShuffleSplit.
+
+
+For time series - TimeSeriesSplit.

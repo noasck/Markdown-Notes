@@ -60,3 +60,65 @@ This will resemble **pivot tables** to those familiar with Excel. And, of course
 - values – a list of variables to calculate statistics for,
 - index – a list of variables to group data by,
 - aggfunc – what statistics we need to calculate for groups, ex. sum, mean, maximum, minimum or something else.
+
+
+--------------------------------------------
+
+# Refference
+
+## Style guide
+
+1. Command name 2rd order header.
+1. Link to documentation.
+2. Method signature.
+3. Main parameters description.
+4. Description with at least 1 example.
+
+
+## PandasMethod
+
+``` python
+method
+```
+- param1 - description
+> Method description
+
+``` python
+example
+```
+-------------------------------------
+
+## pandas.melt
+
+``` python
+pandas.melt(frame,
+            id_vars=None,
+            value_vars=None,
+            var_name=None,
+            value_name='value',
+            col_level=None,
+            ignore_index=True
+            )
+```
+- id_vars ```tuple, list, or ndarray, optional```
+
+Column(s) to use as identifier variables.
+- value_vars ```tuple, list, or ndarray, optional```
+
+Column(s) to unpivot. If not specified, uses all columns that are not set as id_vars.
+
+-var_name ```scalar```
+Name to use for the ‘variable’ column. If None it uses frame.columns.name or ‘variable’.
+value_namescalar, default ‘value’
+
+Name to use for the ‘value’ column.
+col_levelint or str, optional
+
+If columns are a MultiIndex then use this level to melt.
+ignore_indexbool, default True
+
+If True, original index is ignored. If False, the original index is retained. Index labels will be repeated as necessary.
+
+``` python
+example
+```
