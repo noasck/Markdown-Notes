@@ -47,11 +47,10 @@ class Cls:
     @classmethod
     async def create(cls):
         self = cls()
-        self.client = await aiohttp.ClentSession()
+        self.client = aiohttp.ClentSession()
 
 obj = await Cls.create()
 ```
-
 ## Aiohttp client
 #### Client Session
 Reuse session - ```import``` everywhere + ``` session.close()``` at the end.
