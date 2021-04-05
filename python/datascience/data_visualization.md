@@ -16,6 +16,14 @@ Graphics in retina format are more sharp and legible:
 ``` python
 %config InlineBackend.figure_format = 'retina'
 ```
+Import ```plotly```:
+``` python
+from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
+import plotly
+import plotly.graph_objs as go
+
+init_notebook_mode(connected=True)
+```
 
 **Univariate analysis** looks at one feature at a time. When we analyze a feature independently, we are usually mostly interested in the distribution of its values and ignore other features in the dataset.
 
