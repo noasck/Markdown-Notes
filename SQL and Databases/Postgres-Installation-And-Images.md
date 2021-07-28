@@ -40,7 +40,8 @@ createdb <my_db>
 **Ready**
 
 
---------------
+------------------------------
+
 # Installing PostgrSQL with PostGIS and PgAdmin in Docker
 ### Links
 - Crunchy data tutorial: [Read more...](https://blog.crunchydata.com/blog/easy-postgresql-10-and-pgadmin-4-setup-with-docker)

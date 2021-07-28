@@ -13,4 +13,4 @@ Here you can find links to articles, papers or docs.
 
 - **Crunchy data interactive scenarios** - [Read more...](https://learn.crunchydata.com/)
 
-Strongly recommend you to walk through the interactive guide above. It includes such topics as *Postgres Basics, PostGIS Basics, Postgres administration tools*.
+Strongly recommend you to walk through the interactive guide above.
